@@ -22,6 +22,7 @@ const getFile = function (module, fileName, parentTree) {
         children: [],
       };
       parentTree.children.push(childFolder);
+      return;
     }
 
     getFile(module, fileName.slice(charIndex + 1), childFolder);
